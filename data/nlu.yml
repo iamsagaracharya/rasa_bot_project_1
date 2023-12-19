@@ -1,0 +1,37 @@
+version: "3.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+ 
+
+- intent: providing_account_number
+  examples: |
+    - my account [123456](account_number)
+    - account number [123456](account_number)
+    - account is [123456](account_number)
+
+- intent: checking_balance
+  examples: |
+    - check balance of [sagar](name) for account [123456](account_number)
+    - balance in account [123456](account_number)
+
+- intent: transaction_history
+  examples: | 
+    - Show me the recent transactions.
+    - What are the transactions from last week?
+    - Display my transaction history.
+    - my transactions
+    - my transactions history

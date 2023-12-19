@@ -1,0 +1,26 @@
+version: "3.0"
+
+intents:
+  - greet
+  - goodbye
+  - providing_account_number
+  - checking_balance
+  - transaction_history
+
+entities:
+  - account_number
+  - name
+
+responses:
+  utter_greet:
+    - text: "Hello! How can I assist you today?"
+
+  utter_goodbye:
+    - text: "Goodbye! Have a great day."
+
+  utter_transaction_history:
+    - text: "Thanks for checking transaction details"
+  
+actions:
+ - action_show_account_number 
+ - action_checking_balance

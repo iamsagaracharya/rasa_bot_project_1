@@ -1,0 +1,27 @@
+version: "3.0"
+
+stories:
+- story: greet
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- story: greet and show account number
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: providing_account_number
+  - action: action_show_account_number
+
+- story: checking balance in given account number
+  steps:
+  - intent: checking_balance
+  - action: action_checking_balance
+ 
+
+- story: greet and transaction history
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: transaction_history
+  - action: utter_transaction_history
